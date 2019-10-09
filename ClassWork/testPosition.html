@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ทดสอบการใช้ Position</title>
+    <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .divhead {
+        background-color: lightpink;
+        border: 1px solid red;
+        height: 300px;
+        position: relative;
+    }
+
+    .divbody {
+        border: 1px solid blue;
+        /*height: 400px;*/
+        width: 100%;
+        clear: both;
+        display: table;        
+    }
+
+    .divbody1 {
+        background-color: red;
+        border: 1px solid blue;
+        width: 33.33%;
+        float: left;
+        height: 300px; 
+        padding: 50px; 
+    }
+    
+    .divtail {
+        background-color: blueviolet;
+        border: 1px solid black;
+        height: 100px;
+        position: relative;
+    }
+
+    img {
+        position: relative;
+        left: 50px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+ 
+    ::-webkit-scrollbar-thumb {
+        background: rgb(233, 33, 86); 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(161, 0, 43); 
+    }
+</style>
+</head>
+<body>
+    <h1>ทดสอบการใช้ css: Position</h1>
+    <div class="divhead">
+        <iframe src="/HomeWork/attractions.html" width="100%" height="100%"> </iframe>
+    </div>
+    <div class="divbody">
+        <div class="divbody1">
+            <img src="/Image/Diamond.png" width="70%">
+        </div>
+        <div class="divbody1" style="padding: 0px">
+            <iframe src="/ClassWork/TestBorder.html" width="100%" height="100%"> </iframe>
+        </div>
+        <div class="divbody1">
+
+        </div>
+    </div>
+    <div class="divtail">
+
+    </div>
+</body>
+</html>

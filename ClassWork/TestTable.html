@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ทดสอบสร้างตาราง</title>
+    <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+    <style>
+    table,tr,th {
+         border: 1px dotted red;
+    }
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+ 
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(233, 33, 86); 
+    }
+
+    /* hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(161, 0, 43); 
+    }
+    </style>
+</head>
+<body>
+    <center><h1>สร้างตาราง</h1></center>
+<table border="0" width="50%" align="center">
+    <tr> 
+        <td>ระบุชื่อ</td> <td width="5%">:</td> <td>นระเชษฐ์</td>
+    </tr>
+    <tr>
+        <td>ระบุอายุ</td> <td>:</td> <td>18</td>
+    </tr>
+    <tr>
+        <td>ระบุ E-mail</td> <td>:</td> <td>narachet.101@gmail.com</td>
+    </tr>
+</table>
+<center><h1>ข้อมูลและรูปภาพ</h1></center>
+<table border="0" width="50%" align="center">
+    <tr>
+        <th>รูปภาพ</th>
+        <th>รูปภาพ</th>
+        <th>รูปภาพ</th>
+    </tr>
+    <tr> 
+        <td><img src="/Image/Proflie.jpeg" width="200"> </td> 
+        <td><img src="/Image/Proflie.jpeg" width="200"> </td> 
+        <td><img src="/Image/Proflie.jpeg" width="200"></td>
+    </tr>
+    <tr>
+        <td><img src="/Image/Proflie.jpeg" width="200"> </td> 
+        <td><img src="/Image/Proflie.jpeg" width="200"> </td> 
+        <td><img src="/Image/Proflie.jpeg" width="200"> </td> 
+    </tr>
+    <tr>
+        <td><img src="/Image/Proflie.jpeg" width="200"> </td>
+        <td><img src="/Image/Proflie.jpeg" width="200"> </td> 
+        <td><img src="/Image/Proflie.jpeg" width="200"> </td> 
+    </tr>
+
+</table>
+
+<center><h2>การ colspan</h2></center>
+<table border="1" width="50%" align="center">
+    <tr>
+        <td>xxx</td>
+        <td colspan=2>xxx</td>
+    </tr>
+    <tr>
+        <td>xxx</td>
+        <td>xxx</td>
+        <td>xxx</td>
+    </tr>
+</table>
+<center><h2>การ rowspan</h2></center>
+<table valign="middle" cellpadding="10" bgcolor="pink" border="1" width="50%" align="center" > <caption><h3>Rowspan</h3></caption>
+    <tr>
+        <td rowspan="4" width="20%"><h1>xxx</h1></td>
+    </tr>
+    <tr>
+        <td> <img src="/Image/Proflie.jpeg" width="200"></td>
+    </tr>
+    <tr>
+        <td> <img src="/Image/Proflie.jpeg" width="200"></td>
+    </tr>
+    <tr>
+        <td> <img src="/Image/Proflie.jpeg" width="200"></td>
+    </tr>
+</table>
+</body>
+</html>

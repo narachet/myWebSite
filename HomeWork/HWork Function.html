@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Function พื้นฐาน</title>
+<link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+    <style>
+        input {
+            background-color: lightgray;
+            border-radius: 10px;
+            width: 70px;
+            height: 30px;
+        }
+        input:hover {
+            color: white;
+            background-color: blue;
+            border: 3px solid red;
+        }
+        fieldset {
+            width: 30%;
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        var price=700000;
+        var vatPrice=price*0.07;
+            //vatPrice=parseFloat(vatPrice).toFixed(0);
+        var importtax=50000;
+        var netPrice=price+vatPrice+importtax;
+        function carPrice() {
+            //window.alert("Who are you!");
+            document.getElementById("price") .innerHTML=price;
+            document.getElementById("vatPrice") .innerHTML=vatPrice;
+            document.getElementById("importtax") .innerHTML=importtax;
+            document.getElementById("netPrice") .innerHTML=netPrice;
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="/CSS/mystyle.css">
+</head>
+<body>
+    <h1>
+        Function พื้นฐาน
+    </h1>
+    <center>
+    <fieldset>
+    <legend>คำนวนค้ารถยนต์นำเข้า</legend>
+        <table>
+            <tr>
+                <td>ราคารถยนต์</td> <td>: </td> <td><b id="price"></b></td> <td>บาท</td>
+            </tr>
+
+            <tr>
+                <td>ราคา VAT 7%</td> <td>: </td> <td><b id="vatPrice"></b></td> <td>บาท</td>
+            </tr>
+
+            <tr>
+                <td>ภาษีนำเข้า</td> <td>: </td> <td><b id="importtax"></b></td> <td>บาท</td>
+            </tr>
+
+            <tr>
+                <td>ราคาสุทธิ</td> <td>: </td> <td><b id="netPrice"></b> </td> <td>บาท</td>
+            </tr> 
+        </table>
+    </fieldset>
+    
+    <input type="button" value="Click" onclick="carPrice()"> 
+    </center>
+
+</body>
+</html>

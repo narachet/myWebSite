@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>แบบทดสอบที่ 2</title>
+    <link rel="stylesheet" type="text/css" href="CSS/mystyle.css">
+    <script>
+    var ticket=200;
+    var human=5;
+    var totalpay=ticket*human;
+    function myPay() {
+        document.getElementById("ticket") .innerHTML=ticket;
+        document.getElementById("human") .innerHTML=human;
+        document.getElementById("totalpay") .innerHTML=totalpay;
+    }
+    </script>
+    <style>
+    body {
+        margin: 200px;
+        
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+ 
+    ::-webkit-scrollbar-thumb {
+        background: rgb(233, 33, 86); 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(161, 0, 43); 
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Exarm 2</h1>
+    <fieldset style="width: 30%">
+        <legend>ราคารวมไปดูหนัง</legend>
+    <table>
+        <tr><td>ราคาตั๋ว</td><td> : </td><td><b id="ticket"></b></td> <td>บาท</td></tr>
+        <tr><td>ผู้ชม</td><td> : </td><td><b id="human"></b></td> <td>คน</td></tr>
+        <tr><td>ราคารวม</td><td> : </td><td><b id="totalpay"></b></td> <td>บาท</td></tr>
+    </table>
+    </fieldset>
+    <input type="button" value="Click" onclick="myPay()">
+    </center>
+</body>
+</html>
